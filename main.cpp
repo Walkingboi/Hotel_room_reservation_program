@@ -26,60 +26,41 @@ int main()
 	int valinta;
 
 	alku_tarkistus_ja_toimet();
-
-	cout << "Tervetuloa hotelli varaus ohjelmaan" << endl << endl;
-	cout << "Huoneiden generaatio (luo uudet huoneet) tyhjentää myös varaukset = 1" << endl;
-	cout << "Varaa huone = 2" << endl;
-	cout << "haku = 3" << endl;
-	cout << "Sulje ohjelma = 4" << endl;
-
-	cin.clear();
-
-	cout << "Valintasi: ";
-	cin >> valinta;
-
-	switch (valinta)
+	
+	while (true)
 	{
-
-	case 1:
-
-		cout << "\033[2J\033[1;1H";
-
-		huoneiden_määrän_arvonta();
-		
-		cout << "Paina mitä tahansa nappia jatkaaksesi....." << endl;
+		cout << "Tervetuloa hotelli varaus ohjelmaan" << endl << endl;
+		cout << "Huoneiden generaatio (luo uudet huoneet) tyhjentää myös varaukset = 1" << endl;
+		cout << "Varaa huone = 2" << endl;
+		cout << "haku = 3" << endl;
+		cout << "Sulje ohjelma = 4" << endl;
 
 		cin.clear();
-		cin.get();
-		cin.ignore(),
+
+		cout << "Valintasi: ";
+		cin >> valinta;
+
+		cout << "\033[2J\033[1;1H";
+
+		switch (valinta)
+		{
+
+		case 1:
+			huoneiden_määrän_arvonta();
+			break;
 		
-		cout << "\033[2J\033[1;1H";
+		case 2:
+			huone_varaus();
+			break;
 
-		main();
+		case 3:
+			haku();
+			break;
 
-		break;
-	case 2:
+		case 4:
+			return 0;
 
-		cout << "\033[2J\033[1;1H";
-
-		huone_varaus();
-		
-		cout << "Paina mitä tahansa nappia jatkaaksesi....." << endl;
-
-		cin.clear();
-		cin.get();
-		cin.ignore(),
-
-		cout << "\033[2J\033[1;1H";
-		main();
-		break;
-
-	case 3:
-
-		cout << "\033[2J\033[1;1H";
-
-		haku();
-
+		}
 		cout << "Paina mitä tahansa nappia jatkaaksesi....." << endl;
 
 		cin.clear();
@@ -87,12 +68,5 @@ int main()
 		cin.ignore(),
 
 		cout << "\033[2J\033[1;1H";
-		main();
-		break;
-
-	case 4:
-		return 0;
-		
 	}
-
 }

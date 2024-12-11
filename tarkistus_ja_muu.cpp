@@ -57,8 +57,6 @@ bool onko_huoneita_vapaana_1hh()
 		return true;
 	else
 		return false;
-
-
 }
 
 bool onko_huoneita_vapaana_2hh()
@@ -92,8 +90,6 @@ bool onko_huoneita_vapaana_2hh()
 		return true;
 	else
 		return false;
-
-
 }
 
 void uniikki_varausnumero()

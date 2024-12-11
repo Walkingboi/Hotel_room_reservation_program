@@ -67,12 +67,12 @@ int huone_varaus()
 				do
 				{
 					cout << "Tahdotko palata takaisin pää valikkoon ?" << endl;
-					cout << "vastaus (k tai e): ";
+					cout << "vastaus (k tai e): " << endl;
 					cin >> vastaus;
 
 					if (vastaus == "k")
 					{
-						cout << "Palaat pää valikkoon";
+						cout << "Palaat pää valikkoon" << endl;;
 						return 0;
 					}
 
@@ -102,12 +102,12 @@ int huone_varaus()
 				do
 				{
 					cout << "Tahdotko palata takaisin pää valikkoon ?" << endl;
-					cout << "vastaus (k tai e): ";
+					cout << "vastaus (k tai e): " << endl;;
 					cin >> vastaus;
 
 					if (vastaus == "k")
 					{
-						cout << "Palaat pää valikkoon";
+						cout << "Palaat pää valikkoon" << endl;;
 						return 0;
 					}
 
@@ -139,7 +139,7 @@ int huone_varaus()
 
 		if (vastaus == "e")
 		{
-			cout << "Palaat pää valikkoon";
+			cout << "Palaat pää valikkoon" << endl;
 			return 0;
 		}
 	
