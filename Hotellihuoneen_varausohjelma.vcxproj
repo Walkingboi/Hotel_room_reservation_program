@@ -140,9 +140,6 @@
     <ClInclude Include="varaaminen.h" />
     <ClInclude Include="structit.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="hotelli.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
